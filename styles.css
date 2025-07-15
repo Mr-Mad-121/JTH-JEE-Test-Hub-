@@ -1,5 +1,6 @@
 :root {
     --primary-start: #667eea;
+    --primary-start-light: #f8f9ff;
     --primary-end: #764ba2;
     --success: #28a745;
     --danger: #dc3545;
@@ -273,7 +274,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background: white;
+    background: var(--primary-start-light);
     border-radius: 12px;
     margin-bottom: 1.5vh;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -412,6 +413,10 @@ body {
     .section-title {
         font-size: 1.5rem;
         margin-top: 1vh;
+        text-align: center;
+    }
+    .option-input {
+        padding: 2vw;
     }
 }
 
@@ -432,4 +437,11 @@ body {
     background: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+}
+
+.test-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1vh;
 }
